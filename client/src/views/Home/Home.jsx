@@ -12,8 +12,9 @@ function Home() {
 
     const loadFilms = async () => {
         try {
-            const response = await axios.get(`http://localhost:5002/films`)
-            setFilms(response.data.data);
+            const response = await axios.get(`${import.meta.env.VITE_API_URL}/films`)
+            setFilms(response?.data?.data);
+            console.log(response);
             toast.success(response.data.message)
         }
         catch (error) {

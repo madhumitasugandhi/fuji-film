@@ -4,6 +4,7 @@ import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom';
 
+
 function FilmCard({
     _id,
     title,
@@ -27,7 +28,7 @@ const navigate = useNavigate();
         if (!confirmDelete) return;
 
         try {
-            const response = await axios.delete(`http://localhost:5002/films/${_id}`);
+            const response = await axios.delete(`${import.meta.env.VITE_API_URL}/films/${_id}`);
             toast.success(response.data.message || "Film deleted successfully");
 
         } catch (error) {

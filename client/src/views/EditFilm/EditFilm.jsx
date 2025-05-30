@@ -26,7 +26,7 @@ function EditFilm() {
  const loadFilmDetails = async () => {
     if (!id) return;
     try {
-      const response = await axios.get(`http://localhost:5002/films/${id}`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/films/${id}`);
       setFilm(response.data.data);
     } catch (error) {
       toast.error('Failed to load film details');
@@ -35,7 +35,7 @@ function EditFilm() {
 
   const updateFilm = async () => {
     try {
-      await axios.put(`http://localhost:5002/films/${id}`, film);
+      await axios.put(`import.meta.env.VITE_API_HOST/films/${id}`, film);
       toast.success('Film updated successfully!');
     } catch (error) {
       toast.error('Failed to update film.');
