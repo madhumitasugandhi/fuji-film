@@ -35,7 +35,7 @@ function EditFilm() {
 
   const updateFilm = async () => {
     try {
-      await axios.put(`import.meta.env.VITE_API_HOST/films/${id}`, film);
+      await axios.put(`${import.meta.env.VITE_API_URL}/films/${id}`, film);
       toast.success('Film updated successfully!');
     } catch (error) {
       toast.error('Failed to update film.');
