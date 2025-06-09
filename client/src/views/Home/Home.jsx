@@ -5,6 +5,7 @@ import toast, { Toaster } from "react-hot-toast"
 import FilmCard from '../../components/FilmCard/FilmCard'
 import AddFilm from '../../assets/plus.png'
 import { Link } from 'react-router-dom'
+import Footer from '../../components/Footer'
 
 function Home() {
 
@@ -27,7 +28,7 @@ function Home() {
 
     return (
         <div
-            className="min-h-screen flex flex-col items-center px-6 py-12 space-y-12"
+            className="min-h-screen flex flex-col items-center p-6 space-y-12"
             style={{
                 backgroundColor: '#000000',
                 backgroundImage: `
@@ -87,8 +88,7 @@ function Home() {
    
                 />
             </Link>
-
-
+            <Footer/>
         </div>
     );
 

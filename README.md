@@ -15,7 +15,7 @@
 - **Database**: MongoDB (via Mongoose)
 - **Deployment**:
   - Frontend: [Vercel](https://vercel.com)
-  - Backend: [Render](https://render.com) / [Railway](https://railway.app) (you can customize)
+  - Backend: [Render](https://render.com) 
 
 ---
 

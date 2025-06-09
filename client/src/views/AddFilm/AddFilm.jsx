@@ -5,6 +5,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import HomeImg from './../../assets/home.png'
+import Footer from '../../components/Footer';
 
 function AddFilm() {
     const [film, setFilm] = useState({
@@ -45,8 +46,19 @@ function AddFilm() {
     };
 
     return (
-        <div className="min-h-screen bg-black text-white px-6 py-12">
-            <div className="max-w-2xl mx-auto bg-[#1F1F2E] p-8 rounded-xl shadow-lg border border-[#FF0033]">
+        <div className="min-h-screen bg-black text-white p-6 pt-12"
+        style={{
+                backgroundColor: '#000000',
+                backgroundImage: `
+      radial-gradient(closest-side, rgba(139, 0, 20, 0.6), transparent 60%)
+    `,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: '100% 100%',
+                boxShadow: 'inset 0 0 160px rgba(139, 0, 20, 0.5)',
+            }}
+            >
+            <div className="max-w-2xl mx-auto bg-[#1F1F2E] p-8 mb-4 rounded-xl shadow-lg border border-[#FF0033]">
                 <h1 className="text-3xl font-bold text-[#FF0033] mb-6 text-center">
                     Add Film
                 </h1>
@@ -149,6 +161,7 @@ function AddFilm() {
                     />
                 </form>
             </div>
+            <Footer/>
         </div>
     )
 }
