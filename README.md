@@ -1,6 +1,7 @@
-# Fuji Film 🎞️
+# MovieHub (FujiFilms) 🎞️
 
-**Fuji Film** is a full-stack film application built with **React**, **Tailwind CSS**, **Node.js**, **Express**, and **MongoDB**. It allows users to perform full **CRUD operations** on a film collection—add, view, update, and delete film entries.
+**MOVIEHUB** is a full-stack film application built with **React**, **Tailwind CSS**, **Node.js**, **Express**, and **MongoDB**. It allows users to perform full **CRUD operations** on a film collection—add, view, update, and delete film entries. 
+
 
 ### 🌐 Live Site
 🔗 [fuji-film.vercel.app](https://fuji-film.vercel.app)
